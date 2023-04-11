@@ -1,0 +1,101 @@
+\documentclass[signature=preparation]{physicsreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expname{光电效应法测定普朗克常量}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{实验预习}
+\begin{enumerate}
+    \item 请简单推导一下本实验中光频率 $\nu$ 与对应截止电压 $U_0$ 的关系.
+    \item 实验中光电流的实测值与理论值有所区别, 产生原因是什么? 在测量截止电压时如何消除此影响.
+\end{enumerate}
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{preparation}
+\makeatother
+
+\newpage
+% Original experiment data
+\section{实验现象及原始数据记录}
+\vspace*{1.7em}
+
+{\small\selectfont \centering 表 2-1 截止电压测量 (光阑孔直径 = 2 mm) \par}
+\begin{table*}[ht]
+    \renewcommand{\arraystretch}{1.4}
+    \small\selectfont
+    \centering
+    \begin{tabularx}{\textwidth}{|l|Y|Y|Y|Y|Y|Y|} \hline
+        光波长 $\lambda$ (nm)              & 365.0 & 404.7 & 435.8 & 546.1 & 577.0 \\\hline
+        光频率 $\nu$ ($\times 10^{14}$ Hz) & 8.216 & 7.410 & 6.882 & 5.492 & 5.196 \\\hline
+        截止电压 $U_c$ (V)                  &       &       &       &       &       \\\hline
+    \end{tabularx}
+\end{table*}
+
+{\small\selectfont \centering 表 2-2 截止电压测量 (光阑孔直径 = 4 mm) \par}
+\begin{table*}[ht]
+    \renewcommand{\arraystretch}{1.4}
+    \small\selectfont
+    \centering
+    \begin{tabularx}{\textwidth}{|l|Y|Y|Y|Y|Y|Y|} \hline
+        光波长 $\lambda$ (nm)              & 365.0 & 404.7 & 435.8 & 546.1 & 577.0 \\\hline
+        光频率 $\nu$ ($\times 10^{14}$ Hz) & 8.216 & 7.410 & 6.882 & 5.492 & 5.196 \\\hline
+        截止电压 $U_c$ (V)                  &       &       &       &       &       \\\hline
+    \end{tabularx}
+\end{table*}
+
+{\small\selectfont \centering 表 2-3 截止电压测量 (光阑孔直径 = 8 mm) \par}
+\begin{table*}[ht]
+    \renewcommand{\arraystretch}{1.4}
+    \small\selectfont
+    \centering
+    \begin{tabularx}{\textwidth}{|l|Y|Y|Y|Y|Y|Y|} \hline
+        光波长 $\lambda$ (nm)              & 365.0 & 404.7 & 435.8 & 546.1 & 577.0 \\\hline
+        光频率 $\nu$ ($\times 10^{14}$ Hz) & 8.216 & 7.410 & 6.882 & 5.492 & 5.196 \\\hline
+        截止电压 $U_c$ (V)                  &       &       &       &       &       \\\hline
+    \end{tabularx}
+\end{table*}
+
+\normalsize\selectfont
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{data}
+\makeatother
+
+\newpage
+% Data process and others
+\section{数据处理}
+% There must be a manual paragraph indentation here.
+\hspace*{\parindent} (在三个不同直径的光阑孔下分别测量对应各个光频率 $\nu$ 的截止电压 $U_0$, 找出两者的线性关系. 用最小二乘法与作图法求出普朗克常数 $h$ 的实验值, 以及与普朗克常数标准值 $h_0=6.626\times 10^{-34}\ \mathrm{J\cdot s}$ 的相对误差.)
+
+\newpage
+\section{实验现象结论及现象分析}
+\hspace*{\parindent} (分析实验误差的来源, 以及比较以上每种数据处理方法的优缺点.)
+
+\newpage
+\section{讨论题}
+\begin{enumerate}
+    \item 请解释什么是逸出功 $A$, 以及怎样可以从截止电压 $U_0$ 与光频率 $\nu$ 两者的线性关系中求出逸出功 $W$.
+    \item 请讨论一下, 不同金属材料的逸出功 $A$ 是否相同, 并加以解释.
+    \item 请讨论一下, 不同金属材料的 $U_0-\nu$ 的线性关系是否相同, 并加以解释.
+    \item 请解释什么是暗电流, 本底电流和阳极反向电流, 以及它们各自出现的原因, 并讨论它们各自会怎样影响 ``零电流法'' 对截止电压 $U_0$ 的测量结果.
+\end{enumerate}
+
+\end{document}
