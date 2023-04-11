@@ -1,0 +1,20 @@
+\ProvidesExplFile{ctex-fontset-custom.def}
+{\ExplFileDate}{1.0.0}{\ExplFileDescription}
+\setCJKmainfont { NotoSerifSC-Regular.otf }
+[
+  Path       = fonts/,
+  BoldFont   = NotoSerifSC-Bold.otf,
+  ItalicFont = FZKTK.TTF
+]
+\setCJKmonofont { STFANGSO.ttf }
+[ Path = fonts/ ]
+\setCJKfamilyfont { zhsong } { NotoSerifSC-Regular }
+[
+  Path       = fonts/,
+  Extension  = .otf,
+  BoldFont   = NotoSerifSC-Bold
+]
+\setCJKfamilyfont { zhkai  } { FZKTK.ttf }
+[ Path = fonts/ ]
+\NewDocumentCommand \songti   { } { \CJKfamily { zhsong  } }
+\NewDocumentCommand \kaishu   { } { \CJKfamily { zhkai   } }
