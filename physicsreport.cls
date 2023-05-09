@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.0.0]
+\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.1.0]
 
 %%
 %% Class options
@@ -38,6 +38,20 @@
 \RequirePackage{titlesec}
 % Removes vertical gaps in lists
 \RequirePackage{enumitem}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{pgfplots}
+\RequirePackage{float}
+\RequirePackage{siunitx}
+\RequirePackage{xltabular}
+\RequirePackage{multirow}
+% See: https://tex.stackexchange.com/a/176780
+\RequirePackage{makecell}
+% See: https://tex.stackexchange.com/a/478054/290833
+\RequirePackage{stackengine}
+% See: https://www.overleaf.com/learn/latex/Questions/How_do_I_tab_(indent)_a_paragraph_in_LaTeX%3F
+\RequirePackage{indentfirst}
 
 %%
 %% Pre user settings
@@ -92,7 +106,31 @@
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
+% See: https://tex.stackexchange.com/a/478054/290833
+\newcolumntype{L}[1]{>{\minwd l{#1}}l<{\endminwd}}
+\newcolumntype{C}[1]{>{\minwd c{#1}}c<{\endminwd}}
+\newcolumntype{R}[1]{>{\minwd r{#1}}r<{\endminwd}}
+\def\minwd#1#2#3\endminwd{\stackengine{0pt}{#3}{\rule{#2}{0pt}}{O}{#1}{F}{F}{L}}
+\newcolumntype{Q}{@{}c@{}}
+
 \setlist[enumerate]{noitemsep}
+
+\pgfplotsset{%
+    compat=1.18,
+    samples=300,
+    axis lines=middle,
+    legend pos=north east,
+    every axis plot/.append style={line width=0.9pt}
+}
+
+% See: https://thenode.biologists.com/data-visualization-with-flying-colors/research/
+\definecolor{ochre}     {HTML}{D4A03C}
+\definecolor{babyblue}  {HTML}{7AB1E3}
+\definecolor{tea}       {HTML}{549A76}
+\definecolor{straw}     {HTML}{EAE363}
+\definecolor{flatblue}  {HTML}{4271AB}
+\definecolor{copper}    {HTML}{BD642B}
+\definecolor{lavender}  {HTML}{BA7DA3}
 
 %%
 %% Document body stuff
