@@ -1,0 +1,63 @@
+\documentclass[signature=data]{physicsreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expname{弗兰克-赫兹实验}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{实验预习}
+\begin{enumerate}
+    \item 简要叙述波尔的原子能级理论;
+    \item 描述弗兰克-赫兹的实验原理.
+\end{enumerate}
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{preparation}
+\makeatother
+
+\newpage
+% Original experiment data
+\section{实验现象及原始数据记录}
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{data}
+\makeatother
+
+\newpage
+% Data process and others
+\section{数据处理}
+\begin{enumerate}
+    \item 利用计算机软件绘制 $I_A-U_{G2K}$ 曲线;
+    \item 对曲线进行拟合, 利用各峰值或波谷所对应的电压值, 分别用逐差法和最小二乘法计算氩原子的第一激发电位.
+\end{enumerate}
+
+% This vertical gap is for handwriting use. It can be removed when typing answers here.
+\vspace*{30em}
+\section{实验结论及现象分析}
+
+\newpage
+\section{讨论题}
+\begin{enumerate}
+    \item 在 $I_A-U_{G2K}$ 曲线中, 为什么随着 $U_{G2K}$ 的增大, 波谷电流逐渐增大?
+    \item 请分析拒斥电压改变对 $I_A-U_{G2K}$ 曲线的影响.
+    \item 为什么弗兰克-赫兹实验只能测出第一激发态电位?
+\end{enumerate}
+
+\end{document}
