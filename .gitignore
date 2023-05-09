@@ -7,6 +7,10 @@
 *.xdv
 
 # fonts
-*.TTF
-*.ttf
-*.otf
+fonts/
+
+# custom files
+*custom*
+
+# custom data
+data/
