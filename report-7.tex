@@ -1,0 +1,83 @@
+\documentclass[signature=data]{physicsreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expname{双光栅检测微弱振动}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{预习}
+\begin{enumerate}
+    \item 本实验中的拍频是如何产生的?
+    \item 为何认为 $\displaystyle\int_{0}^{\frac{T}{2}}F_{\text{拍}}(t)\mathrm{d}t$ 表示 $\dfrac{T}{2}$ 内的波的个数.
+\end{enumerate}
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{preparation}
+\makeatother
+
+\newpage
+% Original experiment data
+\section{原始数据记录}
+\subsection{}
+\vspace*{-1.5em}
+\begin{table}[H]
+    \caption{测量音叉共振时的振幅数据记录}
+    \vspace*{1em}
+    \centering
+    \begin{tabular}{|>{\bfseries}c|c|} \hline
+        频率 (Hz)                       & \\ \hline
+        半个周期的波数                       & \\ \hline
+        音叉振动的幅度 (\unit{\micro\meter}) & \\ \hline
+    \end{tabular}
+\end{table}
+
+\subsection{}
+\vspace*{-1.5em}
+\begin{table}[H]
+    \caption{测量音叉在不同的驱动频率下的振幅数据记录}
+    \vspace*{1em}
+    \centering
+    \begin{tabularx}{\textwidth}{|>{\bfseries}c|*{9}{X|}} \hline
+        \makecell{频率  \\(Hz)}                       &  &  &  &  &  &  &  &  & \\ \hline
+        \makecell{半个周 \\期的波\\数}                       &  &  &  &  &  &  &  &  & \\ \hline
+        \makecell{音叉振 \\动的幅\\度 (\unit{\micro\meter})} &  &  &  &  &  &  &  &  & \\ \hline
+    \end{tabularx}
+\end{table}
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{data}
+\makeatother
+
+\newpage
+% Data process and others
+\section{数据处理}
+将 9 个不同驱动频率下测得的音叉振幅与对应的驱动频率的关系曲线绘制出来 (电脑作图, 坐标纸等等均可).
+
+\vspace*{20em}
+\section{实验结论及现象分析}
+
+\vspace*{5cm}
+\section{讨论题}
+\begin{enumerate}
+    \item 测量音叉谐振曲线时, 为什么要固定驱动信号功率?
+    \item 静光栅和动光栅的前后位置是否可以互换, 为什么?
+\end{enumerate}
+
+\end{document}
