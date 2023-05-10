@@ -1,0 +1,159 @@
+\documentclass[signature=data]{physicsreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expname{太阳能电池的基本特性研究}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{预习}
+\begin{enumerate}
+    \item 太阳能电池的基本结构和工作原理是什么?
+    \item 太阳能电池的开路电压, 短路电流, 最佳匹配负载和填充因子的物理含义是什么?
+\end{enumerate}
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{preparation}
+\makeatother
+
+\newpage
+% Original experiment data
+\section{原始数据记录}
+\subsection{硅太阳能电池的暗特性测量}
+\begin{xltabular}{\textwidth}{|Y|Y|Y|Y|}
+    \caption{太阳能电池的暗伏安特性测量} \\
+
+    \hline \multirow{2}{*}{\textbf{电压 (V)}} & \multicolumn{3}{c|}{\textbf{电流 (mA)}} \\ \cline{2-4}
+    & \textbf{单晶硅} & \textbf{多晶硅} & \textbf{非晶硅} \\ \hline
+    \endfirsthead
+
+    \endhead
+
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    -7 & & & \\ \hline
+    -6 & & & \\ \hline
+    -5 & & & \\ \hline
+    -4 & & & \\ \hline
+    -3 & & & \\ \hline
+    -2 & & & \\ \hline
+    -1 & & & \\ \hline
+    0 & & & \\ \hline
+    0.3 & & & \\ \hline
+    0.6 & & & \\ \hline
+    0.9 & & & \\ \hline
+    1.2 & & & \\ \hline
+    1.5 & & & \\ \hline
+    1.8 & & & \\ \hline
+    2.1 & & & \\ \hline
+    2.4 & & & \\ \hline
+    2.7 & & & \\ \hline
+    3.0 & & & \\ \hline
+\end{xltabular}
+
+\subsection{开路电压, 短路电流与光强关系测量}
+\begin{xltabular}{\textwidth}{|c|c|Y|Y|Y|Y|Y|Y|Y|Y|Y|}
+    \caption{两种太阳能电池开路电压与短路电流随光强变化关系} \label{tab:2} \\
+
+    \hline \multicolumn{2}{|c|}{\textbf{距离 (cm)}} & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\ \hline
+    \endfirsthead
+
+    \endhead
+
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    \multicolumn{2}{|c|}{\textbf{光强 $I$ (\unit{W/m^2})}} & & & & & & & & \\ \hline
+    \multirow{2}{*}{\textbf{单晶硅}} & \textbf{开路电压 $V_{oc}$ (V)} & & & & & & & & \\ \cline{2-10}
+    & \textbf{短路电流 $I_{sc}$ (mA)} & & & & & & & & \\ \hline
+    \multirow{2}{*}{\textbf{多晶硅}} & \textbf{开路电压 $V_{oc}$ (V)} & & & & & & & & \\ \cline{2-10}
+    & \textbf{短路电流 $I_{sc}$ (mA)} & & & & & & & & \\ \hline
+    \multirow{2}{*}{\textbf{非晶硅}} & \textbf{开路电压 $V_{oc}$ (V)} & & & & & & & & \\ \cline{2-10}
+    & \textbf{短路电流 $I_{sc}$ (mA)} & & & & & & & & \\ \hline
+\end{xltabular}
+
+\subsection{太阳能电池输出特性测试}
+\begin{xltabular}{\textwidth}{|c|c|Y|Y|Y|Y|Y|Y|Y|Y|Y|Y|Y|}
+    \caption{两种太阳能电池输出特性实验} \label{tab:3} \\
+
+    \multicolumn{12}{r}{光强 $I=\qty{}{W/m^2}$} \\
+    \endfirsthead
+
+    \endhead
+
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    \hline \multirow{6}{*}{\textbf{单晶硅}} & \textbf{输出电压 $V$ (V)} & 0 & 0.2 & 0.4 & 0.6 & 0.8 & 1.0 & 1.2 & 1.4 & 1.6 & 1.8 \\ \cline{2-12}
+    & \textbf{输出电流 $I$ (mA)} & & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出功率 $P_o$ (W)} & & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出电压 $V$ (V)} & 2.0 & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出电流 $I$ (mA)} & & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出功率 $P_o$ (W)} & & & & & & & & & & \\ \hline
+    \multirow{6}{*}{\textbf{多晶硅}} & \textbf{输出电压 $V$ (V)} & 0 & 0.2 & 0.4 & 0.6 & 0.8 & 1.0 & 1.2 & 1.4 & 1.6 & 1.8 \\ \cline{2-12}
+    & \textbf{输出电流 $I$ (mA)} & & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出功率 $P_o$ (W)} & & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出电压 $V$ (V)} & 2.0 & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出电流 $I$ (mA)} & & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出功率 $P_o$ (W)} & & & & & & & & & & \\ \hline
+    \multirow{6}{*}{\textbf{非晶硅}} & \textbf{输出电压 $V$ (V)} & 0 & 0.2 & 0.4 & 0.6 & 0.8 & 1.0 & 1.2 & 1.4 & 1.6 & 1.8 \\ \cline{2-12}
+    & \textbf{输出电流 $I$ (mA)} & & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出功率 $P_o$ (W)} & & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出电压 $V$ (V)} & 2.0 & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出电流 $I$ (mA)} & & & & & & & & & & \\ \cline{2-12}
+    & \textbf{输出功率 $P_o$ (W)} & & & & & & & & & & \\ \hline
+\end{xltabular}
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{data}
+\makeatother
+
+\newpage
+% Data process and others
+\section{数据处理}
+\begin{enumerate}
+    \item 绘制单晶硅, 多晶硅, 非晶硅暗伏安特性曲线.
+    \item 根据表 \ref{tab:2} 数据, 画出三种太阳能电池的开路电压随光强变化的关系曲线以及短路电流随光强变化的关系曲线.
+    \item 根据表 \ref{tab:3} 数据, 作三种太阳能电池的输出伏安特性曲线及功率曲线. 计算最大功率 $P_{\mathrm{max}}$ 和最佳匹配负载电阻.
+    \item 根据表 \ref{tab:3} 数据, 计算三种太阳能电池的填充因子和转换效率. 转换效率为
+          \begin{equation*}
+              \eta=\frac{P_\mathrm{max}}{P_\mathrm{in}}=\frac{P_\mathrm{max}}{SI},
+          \end{equation*}
+          其中 $S$ 为太阳能电池面积 (按 \qtyproduct{50 x 50}{mm} 计算), $I$ 为光强.
+    \item 分析可能的误差来源.
+\end{enumerate}
+
+\newpage
+\section{实验现象分析及结论}
+
+\vspace*{25em}
+\section{讨论题}
+\begin{enumerate}
+    \item 太阳能电池的工作原理是什么?
+    \item 如何根据伏安特性曲线计算太阳能电池的最大输出功率和相应的最佳匹配电阻?
+\end{enumerate}
+
+\end{document}
