@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.1.0]
+\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.2.0]
 
 %%
 %% Class options
@@ -45,6 +45,7 @@
 \RequirePackage{float}
 \RequirePackage{siunitx}
 \RequirePackage{xltabular}
+\RequirePackage{booktabs}
 \RequirePackage{multirow}
 % See: https://tex.stackexchange.com/a/176780
 \RequirePackage{makecell}
@@ -52,6 +53,10 @@
 \RequirePackage{stackengine}
 % See: https://www.overleaf.com/learn/latex/Questions/How_do_I_tab_(indent)_a_paragraph_in_LaTeX%3F
 \RequirePackage{indentfirst}
+\RequirePackage{datatool}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\RequirePackage[newfloat]{minted}
 
 %%
 %% Pre user settings
@@ -132,6 +137,16 @@
 \definecolor{copper}    {HTML}{BD642B}
 \definecolor{lavender}  {HTML}{BA7DA3}
 
+\setminted{linenos, breaklines, frame=lines}
+\SetupFloatingEnvironment{listing}{name={程序清单}}
+
+\setmonofont{LigalexMono}[
+    Path=fonts/,
+    Extension=.ttf,
+    ItalicFont=LigalexMono-Italic,
+    BoldFont=LigalexMono-Bold
+]
+
 %%
 %% Document body stuff
 %%
@@ -205,3 +220,8 @@
 \newcommand{\physicsreport@body@signature}[1]{%
     \ifthenelse{\equal{\physicsreport@opt@signature}{#1}}{\physicsreport@body@signature@body}{}
 }
+
+% Use a newly-defined environment to allow page break in minted environment
+% and add the same caption for normal listing environment.
+% See: https://tex.stackexchange.com/a/368971
+\newenvironment{longlisting}{\captionsetup{type=listing}}{}
