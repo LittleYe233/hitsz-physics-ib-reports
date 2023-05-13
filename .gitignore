@@ -14,3 +14,9 @@ fonts/
 
 # custom data
 data/
+
+# Python cache
+__pycache__/
+
+# LaTeX minted
+_minted*
