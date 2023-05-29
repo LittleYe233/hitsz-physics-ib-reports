@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.2.0]
+\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.3.0]
 
 %%
 %% Class options
@@ -47,6 +47,8 @@
 \RequirePackage{xltabular}
 \RequirePackage{booktabs}
 \RequirePackage{multirow}
+% See: https://www.overleaf.com/learn/latex/Multiple_columns
+\RequirePackage{multicol}
 % See: https://tex.stackexchange.com/a/176780
 \RequirePackage{makecell}
 % See: https://tex.stackexchange.com/a/478054/290833
