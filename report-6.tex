@@ -1,0 +1,150 @@
+\documentclass[signature=data]{physicsreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expname{RLC 电路暂态特性的研究}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{预习}
+\begin{enumerate}
+    \item RC, RL 串联电路暂态过程电压表达式, 以及时间常数 $\tau$ 的表达式是什么?
+    \item RLC 串联电路的暂态过程 (三种阻尼过程) 电压表达式, 时间常数 $\tau$ 的表达式是什么?
+    \item 请绘制数字示波器, 信号发生器观测 RC, RL 和 RLC 串联电路的连接线路示意图.
+\end{enumerate}
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{preparation}
+\makeatother
+
+\newpage
+% Original experiment data
+\section{原始数据记录}
+\subsection{RC 串联电路的暂态特性}
+(使用方波信号进行实验, 可取 $V_{pp}=\qty{10}{V}$)
+
+$R=\qty{500}{\ohm}$ \qquad 方波信号周期 $T=$
+
+\vspace*{.5em}
+% There should be a `\par'.
+% See: https://tex.stackexchange.com/a/23653/290833
+{\centering
+    \begin{tabularx}{.7\textwidth}{|c|Y|Y|Y|Y|} \hline
+        $C$         & $\qty{0.022}{\micro F}$ & \qty{10}{\micro F} & \qty{100}{\micro F} & \qty{470}{\micro F} \\\hline
+        时间常数 $\tau$ &                         &                    &                     &                     \\\hline
+    \end{tabularx}
+    \par}
+\vspace*{.5em}
+
+$C=\qty{100}{\micro F}$ \qquad 方波信号周期 $T=$
+
+\vspace*{.5em}
+{\centering
+    \begin{tabularx}{.7\textwidth}{|c|Y|Y|Y|Y|} \hline
+        $R$         & $\qty{10}{\ohm}$ & \qty{50}{\ohm} & \qty{100}{\ohm} & \qty{500}{\ohm} \\\hline
+        时间常数 $\tau$ &                  &                &                 &                 \\\hline
+    \end{tabularx}
+    \par}
+\vspace*{.5em}
+
+\subsection{RL 串联电路的暂态过程}
+(使用方波信号进行实验, 可取 $V_{pp}=\qty{10}{V}$)
+
+$L=\qty{10}{mH}$ \qquad 方波信号周期 $T=$
+
+\vspace*{.5em}
+{\centering
+    \begin{tabularx}{.7\textwidth}{|c|Y|Y|Y|} \hline
+        $R$         & \qty{100}{\ohm} & \qty{500}{\ohm} & \qty{900}{\ohm} \\\hline
+        时间常数 $\tau$ &                 &                 &                 \\\hline
+    \end{tabularx}
+    \par}
+\vspace*{.5em}
+
+$R=\qty{1000}{\ohm}$ \qquad 方波信号周期 $T=$
+
+\vspace*{.5em}
+{\centering
+    \begin{tabularx}{.7\textwidth}{|c|Y|Y|Y|} \hline
+        $L$         & \qty{10}{mH} & \qty{50}{mH} & \qty{100}{mH} \\\hline
+        时间常数 $\tau$ &              &              &               \\\hline
+    \end{tabularx}
+    \par}
+\vspace*{.5em}
+
+\subsection{RLC 串联电路的暂态特性}
+(使用方波信号进行实验, 可取 $V_{pp}=\qty{10}{V}$)
+
+%%%
+%%% This is the original version.
+%%%
+
+测量欠阻尼情况下 $U_C$ 充电时振荡波形的任一 $t_1$ 时峰值 $U_{ct_1}$ 和 $t_1+nT$ 时峰值 $U_{c(t_1+nT)}$
+
+\vspace*{.5em}
+{\centering
+    \begin{tabularx}{\textwidth}{|c|Y|Y|Y|Y|Y|Y|Y|Y|Y|} \hline
+        $n$             & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\\hline
+        $U_{c(t_1+nT)}$ &   &   &   &   &   &   &   &   &   \\\hline
+    \end{tabularx}
+    \par}
+\vspace*{.5em}
+
+$E=$\hspace*{4em}, $t_1=$
+
+%%%
+%%% This is the actual version used in class.
+%%%
+
+% 测量 $U_C$ 振荡波形各峰值和对应时间
+
+% \vspace*{.5em}
+% {\centering
+%     \begin{tabularx}{\textwidth}{|c|Y|Y|Y|Y|Y|Y|} \hline
+%         $U_c$ (V)             &  &  &  &  &  & \\\hline
+%         $t$ (\unit{\micro s}) &  &  &  &  &  & \\\hline
+%     \end{tabularx}
+%     \par}
+% \vspace*{.5em}
+
+% $E=$\hspace*{4em}, $T=$\hspace*{4cm}, $R=$
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{data}
+\makeatother
+
+\newpage
+% Data process and others
+\section{数据处理}
+\begin{enumerate}
+    \item 记录各项实验任务过程中的 $R$、$C$ 和 $L$ 各参数值, 示波器观察到的波形, 以及时间常数 $\tau$.
+    \item 测量欠阻尼情况下 $U_c$ 振荡波形各峰值和对应的时间 $t$, 采用最小二乘法或作图法求出 $\ln\left(1-\dfrac{U_c}{E}\right)\sim t$ 的斜率, 计算时间常数 $\tau$, 并与理论值 $\tau=\dfrac{2L}{R}$ ($R=R_{电阻}+R_s+R_L$) 进行比较, 分析误差产生的原因.
+\end{enumerate}
+
+\newpage
+\section{实验结论及现象分析}
+
+\vspace*{6cm}
+\section{讨论题}
+\begin{enumerate}
+    \item 在 RC 和 RL 电路中, 固定方波频率 $f$ 而改变 $R$ 的阻值, 为什么会有各种不同的波形? 若固定 $R$ 而改变方波频率 $f$, 会得到类似的波形吗? 为什么?
+    \item 在 RLC 电路中, 为什么要适当调节方波频率才能观测到阻尼振荡的波形? 如果频率很高, 将会发生什么样的情况? 试观察.
+\end{enumerate}
+
+\end{document}
