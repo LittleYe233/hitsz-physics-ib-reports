@@ -1,0 +1,85 @@
+\documentclass[signature=data]{physicsreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expname{光的等厚干涉现象与应用}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{预习}
+预习指导书, 设牛顿环的第 $m$ 级暗环半径为 $r_m$, 该处对应的空气隙厚度为 $d$, 凸透镜的凸面曲率半径为 $R$, 空气隙折射率取 $n=1$, 推导出牛顿环的第 $m$ 级暗环半径 $r_m$ 的表达式 $r_m=\sqrt{m\lambda\left(R-\dfrac{m\lambda}{4}\right)}$.
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{preparation}
+\makeatother
+
+\newpage
+% Original experiment data
+\section{原始数据记录}
+\subsection{牛顿环测透镜曲率半径数据记录}
+\begin{table*}[ht]
+     \centering
+     \begin{tabularx}{\textwidth}{|>{\bfseries}c|>{\bfseries}c|Y|Y|Y|Y|Y|Y|} \hline
+          环的序数 & $m$ & 31 & 30 & 29 & 28 & 27 & 26 \\\hline
+          \multirow{2}{*}{\makecell{环的位置           \\读数 / mm}} & 左 & & & & & & \\\cline{2-8}
+               & 右   &    &    &    &    &    &    \\\hline
+          环的序数 & $m$ & 25 & 24 & 23 & 22 & 21 &    \\\hline
+          \multirow{2}{*}{\makecell{环的位置           \\读数 / mm}} & 左 & & & & & & \\\cline{2-8}
+               & 右   &    &    &    &    &    &    \\\hline
+          环的序数 & $n$ & 20 & 19 & 18 & 17 & 16 & 15 \\\hline
+          \multirow{2}{*}{\makecell{环的位置           \\读数 / mm}} & 左 & & & & & & \\\cline{2-8}
+               & 右   &    &    &    &    &    &    \\\hline
+          环的序数 & $n$ & 14 & 13 & 12 & 11 & 10 &    \\\hline
+          \multirow{2}{*}{\makecell{环的位置           \\读数 / mm}} & 左 & & & & & & \\\cline{2-8}
+               & 右   &    &    &    &    &    &    \\\hline
+     \end{tabularx}
+\end{table*}
+
+\subsection{劈尖干涉测磁带厚度数据记录}
+\begingroup
+\noindent\centering\begin{tabularx}{\textwidth}{|c|Y|Y|} \hline
+     \bfseries 测量次数 & \bfseries 第 $i$ 条干涉条纹位置 $x_1$ (mm) & \bfseries 第 $(i+10)$ 条干涉条纹位置 $x_2$ (mm) \\\hline
+     1              &                                    &                                         \\\hline
+     2              &                                    &                                         \\\hline
+     3              &                                    &                                         \\\hline
+     4              &                                    &                                         \\\hline
+     5              &                                    &                                         \\\hline
+\end{tabularx}
+\endgroup
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{data}
+\makeatother
+
+\newpage
+% Data process and others
+\section{数据处理}
+用逐差法求 $D_m^2-D_n^2$ 的平均值; 计算曲率半径 $R$ 的平均值及不确定度; 计算磁带的厚度, 要有完整的计算过程.
+
+\newpage
+\section{实验结论及现象分析}
+
+\vspace*{8cm}
+\section{讨论题}
+\begin{enumerate}
+     \item 理论上牛顿环中心是个暗点, 实际上看到的往往是个忽明忽暗的斑, 其原因是什么? 对透镜曲率半径 $R$ 测量有无影响?
+     \item 实验中, 若平板玻璃上有微小的凸起, 则凸起处的干涉条纹会发生如何变化?
+\end{enumerate}
+
+\end{document}
