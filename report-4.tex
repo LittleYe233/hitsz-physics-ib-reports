@@ -1,0 +1,117 @@
+\documentclass[signature=data]{physicsreport}
+
+%%
+%% User settings
+%%
+
+\classno{}
+\stuno{}
+\groupno{}
+\stuname{}
+\expdate{\expdatefmt\today}
+\expname{准稳态法测不良导体的比热容和导热系数}
+
+%%
+%% Document body
+%%
+
+\begin{document}
+% First page
+% Some titles and personal information are defined in ``\maketitle''.
+\maketitle
+
+\section{预习}
+\begin{enumerate}
+    \item 请结合一维无限大平板导热模型, 利用傅里叶热传导定律, 给出导热系数的推导过程?
+    \item 在本实验中, 如何判断系统进入准稳态?
+\end{enumerate}
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{preparation}
+\makeatother
+
+\newpage
+% Original experiment data
+\section{原始数据记录}
+\begin{center}
+    加热电压 $V=$\qquad (V), 加热膜电阻 $r=$\qquad (\unit{\ohm}), 试样厚度 $R=$\qquad (m)
+\end{center}
+
+\begingroup
+%%%
+%%% This version is better for electronic notes.
+%%%
+
+% \noindent\centering\begin{tabularx}{\textwidth}{|>{\bfseries}c|Y|Y|Y|Y|Y|} \hline
+%     记录点                         & 1  & 2  & 3  & 4  & 5  \\\hline
+%     时间 $\tau$ (min)             &    &    &    &    &    \\\hline
+%     加热面热电势 $S_1$ (mV)           &    &    &    &    &    \\\hline
+%     中心面热电势 $S_2$ (mV)           &    &    &    &    &    \\\hline
+%     两面热电势之差 $V_t$ (mV)          &    &    &    &    &    \\\hline
+%     5 分钟热电势升高 $\Delta V_h$ (mV) &    &    &    &    &    \\\hline
+%     记录点                         & 6  & 7  & 8  & 9  & 10 \\\hline
+%     时间 $\tau$ (min)             &    &    &    &    &    \\\hline
+%     加热面热电势 $S_1$ (mV)           &    &    &    &    &    \\\hline
+%     中心面热电势 $S_2$ (mV)           &    &    &    &    &    \\\hline
+%     两面热电势之差 $V_t$ (mV)          &    &    &    &    &    \\\hline
+%     5 分钟热电势升高 $\Delta V_h$ (mV) &    &    &    &    &    \\\hline
+%     记录点                         & 11 & 12 & 13 & 14 & 15 \\\hline
+%     时间 $\tau$ (min)             &    &    &    &    &    \\\hline
+%     加热面热电势 $S_1$ (mV)           &    &    &    &    &    \\\hline
+%     中心面热电势 $S_2$ (mV)           &    &    &    &    &    \\\hline
+%     两面热电势之差 $V_t$ (mV)          &    &    &    &    &    \\\hline
+%     5 分钟热电势升高 $\Delta V_h$ (mV) &    &    &    &    &    \\\hline
+%     记录点                         & 16 & 17 & 18 & 19 & 20 \\\hline
+%     时间 $\tau$ (min)             &    &    &    &    &    \\\hline
+%     加热面热电势 $S_1$ (mV)           &    &    &    &    &    \\\hline
+%     中心面热电势 $S_2$ (mV)           &    &    &    &    &    \\\hline
+%     两面热电势之差 $V_t$ (mV)          &    &    &    &    &    \\\hline
+%     5 分钟热电势升高 $\Delta V_h$ (mV) &    &    &    &    &    \\\hline
+% \end{tabularx}
+
+%%%
+%%% This version is better for handwriting notes. Looks closer to the original report.
+%%%
+\renewcommand{\arraystretch}{1.5}
+\noindent\centering\begin{tabularx}{\textwidth}{|>{\bfseries}c|Y|Y|Y|Y|Y|Y|Y|Y|Y|Y|} \hline
+    记录点 & 1  & 2  & 3  & 4  & 5  & 6  & 7  & 8  & 9  & 10 \\\hline
+    \makecell{\bfseries 时间                                \\$\tau$ (min)}             &    &    &    &    &    &    &    &    &    &    \\\hline
+    \makecell{\bfseries 加热面热电                             \\势 $S_1$ (mV)}           &    &    &    &    &    &    &    &    &    &    \\\hline
+    \makecell{\bfseries 中心面热电                             \\势 $S_2$ (mV)}           &    &    &    &    &    &    &    &    &    &    \\\hline
+    \makecell{\bfseries 两面热电势                             \\之差 $V_t$ (mV)}          &    &    &    &    &    &    &    &    &    &    \\\hline
+    \makecell{\bfseries 5 分钟热电势                           \\升高 $\Delta V_h$ (mV)} &    &    &    &    &    &    &    &    &    &    \\\hline
+    记录点 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\\hline
+    \makecell{\bfseries 时间                                \\$\tau$ (min)}             &    &    &    &    &    &    &    &    &    &    \\\hline
+    \makecell{\bfseries 加热面热电                             \\势 $S_1$ (mV)}           &    &    &    &    &    &    &    &    &    &    \\\hline
+    \makecell{\bfseries 中心面热电                             \\势 $S_2$ (mV)}           &    &    &    &    &    &    &    &    &    &    \\\hline
+    \makecell{\bfseries 两面热电势                             \\之差 $V_t$ (mV)}          &    &    &    &    &    &    &    &    &    &    \\\hline
+    \makecell{\bfseries 5 分钟热电势                           \\升高 $\Delta V_h$ (mV)} &    &    &    &    &    &    &    &    &    &    \\\hline
+\end{tabularx}
+\endgroup
+
+% Teacher signature
+\makeatletter
+\physicsreport@body@signature{data}
+\makeatother
+
+\newpage
+% Data process and others
+\section{数据处理}
+\begin{enumerate}
+    \item 在坐标纸上分别画出 $\Delta T-\tau$ 及 $T-\tau$ 曲线, 从图上判断何时进入准稳态, 并求出 $\Delta T$ 及 $\dfrac{\mathrm{d}T}{\mathrm{d}\tau}$.
+    \item 计算有机玻璃样品和橡胶样品的导热系数和比热容.
+\end{enumerate}
+
+\newpage
+\section{实验结论及现象分析}
+
+\vspace*{6cm}
+\section{讨论题}
+\begin{enumerate}
+    \item 本实验中我们采取在样品两端加热的方式根据加热面与中心面的温差及端面温升速率求出导热系数和比热. 实验中为何使用四块样品?
+    \item 本实验中判断系统进入准稳态的条件是什么?
+    \item 本实验中准稳态会无限保持下去吗?是否时间越长实验数据越好?
+\end{enumerate}
+
+\end{document}
