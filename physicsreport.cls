@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.3.0]
+\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.4.0]
 
 %%
 %% Class options
@@ -125,7 +125,6 @@
 \pgfplotsset{%
     compat=1.18,
     samples=300,
-    axis lines=middle,
     legend pos=north east,
     every axis plot/.append style={line width=0.9pt}
 }
