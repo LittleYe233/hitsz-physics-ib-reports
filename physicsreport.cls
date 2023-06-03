@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.4.0]
+\ProvidesClass{physicsreport}[LaTeX template for HITsz Physics IB reports ver. 1.5.0]
 
 %%
 %% Class options
@@ -59,6 +59,8 @@
 \RequirePackage{caption}
 \RequirePackage{subcaption}
 \RequirePackage[newfloat]{minted}
+% See: https://tex.stackexchange.com/a/43747/290833
+\RequirePackage{enumitem}
 
 %%
 %% Pre user settings
@@ -147,6 +149,8 @@
     ItalicFont=LigalexMono-Italic,
     BoldFont=LigalexMono-Bold
 ]
+
+\setlist{nosep}
 
 %%
 %% Document body stuff
